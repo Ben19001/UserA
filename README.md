@@ -11,6 +11,7 @@ This is a full-stack application that implements a user authentication system us
 -Password Reset: Users can reset their passwords via an email token, which is valid for one hour. After clicking the reset link, they can create a new password.
 
 
+
 **Technologies Used:**
 
 -Backend: Node.js, Express.js
@@ -20,7 +21,9 @@ This is a full-stack application that implements a user authentication system us
 -Database: MongoDB
 
 
+
 **Authentication:** Password hashing with bcrypt, CSRF protection
+
 
 
 **Email:** Nodemailer for sending registration and password reset emails
