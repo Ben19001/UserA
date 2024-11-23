@@ -1,0 +1,31 @@
+#registerContainer {
+    width: 400px;
+    display: block;
+}
+
+#registerButtonContainer, #passwordContainer, #usernameContainer, #emailContainer, #nameSpan {
+    width: 400px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#enterEmail, #usernameInput, #passwordInput {
+    width: 400px;
+}
+
+#nameSpan, #buttonSpan {
+    display: flex;
+    width: 100%;
+    justify-content: space-between; 
+}
+
+#firsty, #lasty, #registerReset, #registerSubmit {
+    flex: 1; 
+    margin-right: 1rem;
+}
+
+
+#lasty, #registerReset {
+    margin-right: 0;
+}

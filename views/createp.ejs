@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <form class="createPasswordForm">
+      <div>
+        <input type="hidden" name="_csrf" value="<%= csrfToken %>" />
+      </div>
+      <div>
+        <input
+          type="password"
+          name="enterPassword"
+          id="EnterPassword"
+          placeholder="Enter new password"
+          required
+        />
+      </div>
+      <div>
+        <input
+          type="password"
+          name="reenterPassword"
+          id="ReenterPassword"
+          placeholder="Re-enter password"
+          required
+        />
+      </div>
+      <div id="submitPForm">
+        <button type="submit" id="submitNewP">Create new password</button>
+      </div>
+    </form>
+    <script src="/createPassword.js"></script>
+  </body>
+</html>

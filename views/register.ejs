@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <form class="registerForm">
+      <input type="hidden" name="_csrf" value="<%= csrfToken %>" />
+      <div id="registerContainer">
+        <div id="nameContainer">
+          <span id="nameSpan">
+            <input
+              type="text"
+              name="firstname"
+              id="firsty"
+              placeholder="First name"
+              required
+            />
+            <input
+              type="text"
+              name="lastname"
+              id="lasty"
+              placeholder="Last name"
+              required
+            />
+          </span>
+        </div>
+        <div id="emailContainer">
+          <input
+            type="email"
+            name="email"
+            id="enterEmail"
+            placeholder="Enter email"
+            required
+          />
+        </div>
+        <div id="usernameContainer">
+          <input
+            type="text"
+            name="Username"
+            id="usernameInput"
+            placeholder="Enter a username"
+            required
+          />
+        </div>
+        <div id="passwordContainer">
+          <input
+            type="password"
+            name="Password"
+            id="passwordInput"
+            placeholder="Enter a password"
+            required
+          />
+        </div>
+        <div id="registerButtonContainer">
+          <span id="buttonSpan">
+            <button id="registerSubmit" type="submit">Create Account</button>
+            <button id="registerReset" type="reset">Reset</button>
+          </span>
+        </div>
+      </div>
+    </form>
+
+    <script src="reg.js"></script>
+  </body>
+</html>

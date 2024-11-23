@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <form class="loginForm">
+      <div>
+        <input type="hidden" name="_csrf" value="<%= csrfToken %>" />
+      </div>
+      <div id="parentLoginContainer">
+        <div id="loginEmailContainer">
+          <input
+            type="email"
+            name="loginEmail"
+            id="loginEmail"
+            placeholder="Enter email"
+            required
+          />
+        </div>
+        <div id="loginPasswordContainer">
+          <input
+            type="password"
+            name="loginPassword"
+            id="loginPassword"
+            placeholder="Enter password"
+            required
+          />
+        </div>
+        <div id="loginButtonsContainer">
+          <span id="loginButtonSpan">
+            <button type="reset" id="loginReset">Reset</button>
+            <button type="submit" id="loginSubmit">Continue</button>
+          </span>
+        </div>
+      </div>
+    </form>
+    <div id="resetLoginPassword">
+      <a href="reset">Forgot Password</a>
+    </div>
+    <script src="/log.js"></script>
+  </body>
+</html>
