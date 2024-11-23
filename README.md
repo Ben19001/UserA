@@ -10,13 +10,17 @@ Key features of this application include:
 
 -Password Reset: Users can reset their passwords via an email token, which is valid for one hour. After clicking the reset link, they can create a new password.
 
+
 Technologies Used:
 -Backend: Node.js, Express.js
 -Frontend: Vanilla JavaScript, HTML/CSS
 -Database: MongoDB
 
+
 Authentication: Password hashing with bcrypt, CSRF protection
 
+
 Email: Nodemailer for sending registration and password reset emails
+
 
 Security: HTTPS, CSRF protection, session management, token-based authentication
