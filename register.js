@@ -133,7 +133,6 @@ async function sendToConfirmAccount(email, registerToken) {
         },
     });
     //const registerToken = req.session.registerToken;
-
     try {
         await helper(transporter, email, registerToken);
         dateBeforeReset = Date.now() + 3600000;
